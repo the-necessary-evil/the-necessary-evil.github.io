@@ -1,0 +1,129 @@
+/* CSS file for managing necessary evil web page */
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico:regular);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lobster:regular);
+
+html,
+body {
+    background-image: url("../img/bg_dark.jpg");
+    background-attachment: fixed;
+    background-position-x: 55%;
+}
+
+.header {
+    color: white;
+    font-family: 'Pacifico';
+    font-size: 6ex;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    animation: appear 5s, pulse 10s infinite;
+    /* animation:  10s infinite; */
+}
+
+.logo {
+    min-height: 20%;
+    display: block;
+    font-family: 'Pacifico', cursive;
+    font-size: 6ex;
+    color: rgba(255, 255, 255, 0.8);
+    font-display: block;
+    text-shadow: 100px;
+    padding-top: 3%;
+    animation: appear 5s;
+    padding-bottom: 5%;
+}
+
+.main-card {
+    margin-top: 7%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    animation: appear 5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+}
+
+#side-nav-button {
+    color: rgba(255, 255, 255, 0.823);
+    font-family: 'Pacifico';
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    animation: sidebar-appear 10s;
+}
+
+#main {
+    transition: margin-left .5s;
+    /* padding: 16px; */
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        color: #f1f1f166
+    }
+    50% {
+        color: #ffff;
+    }
+    100% {
+        color: #f1f1f166
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-100%)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}
+
+@keyframes sidebar-appear {
+    0% {
+        color: rgba(255, 255, 255, 0)
+    }
+    100% {
+        color:white
+    }
+}
