@@ -102,9 +102,11 @@ body {
     0% {
         color: #f1f1f166
     }
+
     50% {
         color: #ffff;
     }
+
     100% {
         color: #f1f1f166
     }
@@ -114,6 +116,7 @@ body {
     0% {
         transform: translateY(-100%)
     }
+
     100% {
         transform: translateY(0px)
     }
@@ -123,7 +126,8 @@ body {
     0% {
         color: rgba(255, 255, 255, 0)
     }
+
     100% {
-        color:white
+        color: white
     }
 }
