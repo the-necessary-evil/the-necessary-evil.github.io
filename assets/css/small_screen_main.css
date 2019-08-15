@@ -40,6 +40,11 @@ body {
     margin-top: 7%;
 }
 
+.content-card {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
