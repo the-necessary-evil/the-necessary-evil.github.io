@@ -1,4 +1,3 @@
-// function toggleDarkMode() {
-//     var element = document.body;
-//     element.classList.toggle("dark-mode");
-// }
+window.addEventListener("load", () => {
+    document.querySelector("body").classList.add("loaded");
+});

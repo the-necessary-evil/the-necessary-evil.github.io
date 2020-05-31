@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap');
 
 body {
     background-color: rgba(22, 39, 54, 0.938);
@@ -63,9 +64,12 @@ input:checked+.switch::after {
 }
 
 .shadow {
-    -webkit-box-shadow: 5px 5px 10px 6px #000000;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    5px 5px 10px 6px #000000;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         5px 5px 10px 6px #000000;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    -webkit-box-shadow: 5px 5px 10px 6px #000000;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 5px 5px 10px 6px #000000;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 5px 5px 10px 6px #000000;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 .edible-linux {
@@ -74,7 +78,8 @@ input:checked+.switch::after {
     padding: 20%;
 }
 
-.links, .links:hover {
+.links,
+.links:hover {
     text-decoration: none;
     font-family: pacifico;
     color: rgba(225, 225, 225, 0.938);
@@ -84,15 +89,19 @@ input:checked+.switch::after {
     padding: 15px;
     margin: 2%;
     border-radius: 30%;
-    box-shadow: 10px 10px 5px grey;
 }
 
 .jumbotron {
     margin-top: 10%;
-    color: #000000;
-    background-color: #15273b;
+    box-shadow: 10px 10px 5px rgba(62, 82, 102, 0.374);
 }
 
 .display-5 {
     font-family: Quicksand;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.674);
+}
+
+.lead {
+    font-family: overlock;
+    color: rgba(225, 225, 225, 0.5);
 }
