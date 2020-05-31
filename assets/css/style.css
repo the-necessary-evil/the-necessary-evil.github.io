@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap');
 
 body {
-    background-color: rgba(22, 39, 54, 0.938);
+    background-color: rgba(247, 252, 255, 0.938);
     color: white;
 }
 
@@ -93,6 +93,13 @@ input:checked+.switch::after {
 
 .jumbotron {
     margin-top: 10%;
+    transition: color 0.5s, margin-top 1s, box-shadow 0.5s;
+}
+
+.jumbotron:hover {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    margin-top: 6%;
+    color: #52cf71;
     box-shadow: 10px 10px 5px rgba(62, 82, 102, 0.374);
 }
 
